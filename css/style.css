@@ -5,3 +5,20 @@
   	display: block;
   	margin: 0 auto;
 }
+
+#contact {
+	height: 650px;
+}
+
+.contact-text {
+	margin-top: 20px;
+}
+
+.socialmedia {
+	margin-top: 20px;
+}
+
+footer {
+	padding: 50px 0;
+    background: #000;
+}
