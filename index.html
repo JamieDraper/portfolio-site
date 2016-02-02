@@ -15,13 +15,19 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+	<!-- Scrollspy compensate for fixed top nav -->	
+	<script>
+		var shiftWindow = function() { scrollBy(0, -50) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+	</script>
 
 
 
 	</head>
-	<body data-spy="scroll" data-target=".navbar">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<nav class="page-header" id="home">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="my-navbar">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="my-navbar" data-offset="500">
 	        	<div class="container">
 		            <div class="navbar-header">
 		              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
@@ -36,7 +42,7 @@
 		            <a href="" class="btn btn-warning navbar-btn navbar-right">Say Hello!</a>
 		              <ul class="nav navbar-nav">
 		                <li class="active"><a href="#home">Home</a></li>
-		                <li class=""><a href="#feedback">Feedback</a></li>
+		                <li class=""><a href="#about">About Me</a></li>
 		                <li class=""><a href="#portfolio">Portfolio</a></li>
 		                <li class=""><a href="#contact">Contact</a></li>
 		              </ul>
@@ -49,8 +55,7 @@
 	        <div class="jumbotron">
 	        	<div class="container text-center">
 	        		<h1>Jamie Draper</h1>
-	        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        		tempor.</p>
+	        		<p>Self-taught software developer; soon to be junior developer</p>
 	        		<hr>
 	        		<div class="btn-group">
 	        			<a href="" class="btn btn-lg btn-warning">Github</a>
@@ -61,49 +66,126 @@
 	        </div> <!-- end jumbotron AND FIRST SECTION-->
    		</nav> <!-- end home section -->
 
-   		<div class="container">
-   			<section>
-   				<div class="page-header" id="feedback">
-   					<h2>Feedback.<small> Check out the Awesome Feedback</small></h2>
-   				</div>
-
-   				<div class="row">
-   					<div class="col-lg-4">
-	   					<blockquote>
-	   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-	   						<footer>John Doe</footer>
-	   					</blockquote>
-   					</div>
-   					<div class="col-lg-4">
-	   					<blockquote>
-	   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-	   						<footer>John Doe</footer>
-	   					</blockquote>
-   					</div>
-   					<div class="col-lg-4">
-	   					<blockquote>
-	   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-	   						<footer>John Doe</footer>
-	   					</blockquote>
-   					</div>
-   				</div>
-   			</section>
-   		</div> <!-- End container -->
-
-   	<!-- call to action -->
-   		<section>
-   			<div class="well">
-   				<div class="container text-center">
-   				<h3>Subscribe for more free stuff</h3>
-   				<p>Enter your name and email</p>
+   		<div id="about">
+   			<div class="container">
+   				<section>
    				
-   					
-   				</div> <!-- end container -->
-   			</div> <!-- end well-->
-   		</section>
+   			
+	   				<h2>About Me</h2>
+		   				
+
+	   				<div class="row">
+	   					<div class="col-sm-6 col-md-4">
+		   					<blockquote>
+		   						<h3>Who Am I?</h3>
+		   						<p>Hello, I'm Jamie, and I'm a self taught developer from West Yorkshire, England. 2016 is going to be a big year. <br><br>In the next 12 months I'll be growing my skills and landing a junior developer position at an awesome company. I have had the oppertunity to nuture my knowledge through various freelance contracts and I am now looking for a full time position in which to really flourish!</p>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-sm-6 col-md-4">
+		   					<blockquote>
+		   						<h3>What Can I Do?</h3>
+		   						<p><b>All sorts!</b> I have experience in:</p>
+		   						<ul class="list">
+		   							<li>Building web scrapers with Python for lead generation</li>
+		   							<li>iPhone app development working with 3D models using Objective-C and Swift</li>
+		   							<li>Building websites using HTML, CSS and Twitter Bootstrap</li>
+		   							<li>Web app development using JavaScript</li>
+		   						</ul>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-sm-12 col-md-4">
+		   					<blockquote>
+		   						<h3>Anything else?</h3>
+		   						<p>The only thing better than my smile is my attitude...</p>
+		   						<img class=" img-circle mepic" 
+		   						src="http://s21.postimg.org/436l4lk6f/image_4.jpg small">
+		   					</blockquote>
+	   					</div>
+   				
+		   		
+	   			</section>
+   			</div> <!-- end container -->
+   		</div>
+
+   		<div id="portfolio">
+   			<div class="container">
+   				<section>
+   				
+   			
+	   				<h2>Portfolio</h2>
+		   				
+
+	   				<div class="row">
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>Who Am I?</h3>
+		   						<p>Hello, I'm Jamie, and I'm a self taught developer form West Yorkshire, England. 2016 is going to be a big year. <br><br>In the next 12 months I'll be growing my skills and landing a junior developer position at an awesome company. I have had the oppertunity to nuture my knowledge through various freelance contracts and I am now looking for a full time position in which to really flourish!</p>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>What Can I Do?</h3>
+		   						<p><b>All sorts!</b> I have experience in:</p>
+		   						<ul class="list">
+		   							<li>Building web scrapers with Python for lead generation</li>
+		   							<li>iPhone app development using Objective-C and Swift</li>
+		   							<li>HTML, CSS and Twitter Bootstrap</li>
+		   							<li>Web app development using JavaScript</li>
+		   						</ul>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>Anything else?</h3>
+		   						<p>Yes, the only thing better than my smile is my attitude...</p>
+		   					</blockquote>
+	   					</div>
+   				
+		   		
+	   			</section>
+   			</div> <!-- end container -->
+   		</div>
+
+   		<div id="contact">
+   			<div class="container">
+   				<section>
+   				
+   			
+	   				<h2>Contact Me</h2>
+		   				
+
+	   				<div class="row">
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>Who Am I?</h3>
+		   						<p>Hello, I'm Jamie, and I'm a self taught developer form West Yorkshire, England. 2016 is going to be a big year. <br><br>In the next 12 months I'll be growing my skills and landing a junior developer position at an awesome company. I have had the oppertunity to nuture my knowledge through various freelance contracts and I am now looking for a full time position in which to really flourish!</p>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>What Can I Do?</h3>
+		   						<p><b>All sorts!</b> I have experience in:</p>
+		   						<ul class="list">
+		   							<li>Building web scrapers with Python for lead generation</li>
+		   							<li>iPhone app development using Objective-C and Swift</li>
+		   							<li>HTML, CSS and Twitter Bootstrap</li>
+		   							<li>Web app development using JavaScript</li>
+		   						</ul>
+		   					</blockquote>
+	   					</div>
+	   					<div class="col-md-4">
+		   					<blockquote>
+		   						<h3>Anything else?</h3>
+		   						<p>Yes, the only thing better than my smile is my attitude...</p>
+		   						
+		   					</blockquote>
+	   					</div>
+   				
+		   		
+	   			</section>
+   			</div> <!-- end container -->
+   		</div>
+
 
 
 
